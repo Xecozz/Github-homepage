@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale=1.0 />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4338b2c7dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/art.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Portfolio de Xecozz</title>
+</head>
+
+<body>
+    <div>
+        <input type="checkbox" id="menu-toggle" />
+        <label id="trigger" for="menu-toggle"></label>
+        <label id="burger" for="menu-toggle"></label>
+        <ul id="menu">
+            <li><a href="https://github.com/Xecozz">Github</a></li>
+            <li><a href="https://xecozz.github.io/fawr/">Fawr</a></li>
+            <li><a href="https://xecozz.github.io/1date1image/">1Date-1Image</a></li>
+        </ul>
+    </div>
+
+    <div class="loading_cont">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="loader">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo" />
+                    <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                </filter>
+                <linearGradient id="MyGradient">
+                    <stop offset="5%" stop-color="#40204c" />
+                    <stop offset="40%" stop-color="#a3225c" />
+                    <stop offset="100%" stop-color="#e24926" />
+                </linearGradient>
+            </defs>
+            <mask id="maska">
+                <g class="blobs">
+                    <circle class="blob" cx="440" cy="250" r="30" transform="rotate(0) translate(0, 0) rotate(0)" />
+                    <circle class="blob" cx="500" cy="320" r="70" transform="rotate(0) translate(0, 0) rotate(0)" />
+                    <circle class="blob" cx="300" cy="390" r="40" transform="rotate(0) translate(0, 0) rotate(0)" />
+                    <circle class="blob" cx="380" cy="390" r="80" transform="rotate(0) translate(0, 0) rotate(0)" />
+                    <circle class="blob" cx="470" cy="450" r="20" transform="rotate(0) translate(0, 0) rotate(0)" />
+                </g>
+            </mask>
+            <rect x="200" y="200" mask="url(#maska)" fill="url(#MyGradient)" width="400" height="400">
+        </svg>
+    </div>
+    <header>
+        Portfolio de Xecozz
+    </header>
+
+    <div class="mygallery">
+        <div class="column">
+            <a href="https://xecozz.github.io/fawr/"><img src="img/fawr.PNG" alt=""></a>
+
+
+
+        </div>
+        <div class="column">
+            <a href="https://xecozz.github.io/1date1image/"><img src="img/date-image.PNG" alt=""></a>
+
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/screens.js"></script>
+
+</body>
+
+</html>
